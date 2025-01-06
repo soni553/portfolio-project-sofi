@@ -11,6 +11,7 @@ header {
     position: sticky;
     top: 0;
     width: 100vw;
+    justify-content: space-between;
 }
 
 header,
@@ -26,14 +27,13 @@ nav {
 
 nav {
     display: flex;
-    justify-content: flex-end;
 }
 
 nav ul {
     width: 70vw;
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 2vw;
+    padding-right: 8vw;
     gap: 50px;
 }
 
@@ -75,7 +75,6 @@ label {
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    justify-content: flex-start;
     padding-left: 6vw;
 }
 
@@ -430,134 +429,3 @@ footer p {
 
 
 @media (max-width: 1399.98px) {}
-
-
-
-
-
-
-/*  old-responsive  
-
-@media (max-width: 575.98px) {}
-
-
-@media (max-width: 767.98px) {
-    nav {
-        display: none;
-    }
-
-    .myself {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
-
-    main {
-        height: 40vh;
-        padding-top: 0.5vh;
-    }
-
-    #gallery {
-        /* height: 2500px; 
-height: 600vh;
-}
-
-#gallery .item {
-    width: 250px;
-    height: 300px;
-}
-
-.item a {
-    padding: 3px;
-}
-
-.item h3 {
-    padding: 5px;
-}
-
-.item .proimg {
-    width: 220px;
-    height: 100px;
-}
-}
-
-
-@media (max-width: 991.98px) {
-    #gallery {
-        /*    height: 2500px; 
-        height: 240vh;
-    }
-
-    #gallery .item {
-        width: 250px;
-        height: 300px;
-    }
-
-    .item a {
-        padding: 3px;
-    }
-
-    .item h3 {
-        padding: 5px;
-    }
-
-    .item .proimg {
-        width: 220px;
-        height: 150px;
-    }
-
-    .item {
-        height: 420px;
-    }
-
-}
-
-
-@media (max-width: 1199.98px) {
-    #gallery {
-        /*   height: 1650px; 
-        height: 200vh;
-    }
-
-    main h1 {
-        font-size: 4.2em;
-        text-align: center;
-    }
-
-    main p {
-
-        font-size: 1.2rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-
-    }
-
-    .item {
-        height: 440px;
-    }
-
-    /* #gallery .item {
-            width: 280px;
-        }
-    
-        .item .proimg {
-            width: 240px;
-            height: 200px;
-        } 
-
-}
-
-
-@media (max-width: 1399.98px) {
-    #gallery {
-        /* height: 1450px; 
-        height: 200vh;
-    }
-
-    .item {
-        height: 460px;
-    }
-}
-
-*/
