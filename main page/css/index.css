@@ -389,6 +389,10 @@ footer p {
 
 
 @media (max-width: 767.98px) {
+    header {
+        justify-content: space-evenly;
+    }
+
     #hamburger {
         display: block;
     }
@@ -408,7 +412,7 @@ footer p {
 
     .myself {
         flex-direction: row-reverse;
-        padding-right: 5vw;
+        padding-right: 8vw;
     }
 
     #about p {
@@ -420,6 +424,11 @@ footer p {
 @media (max-width: 991.98px) {
     #gallery {
         flex-direction: column;
+    }
+
+    form {
+        width: 400px;
+        background: rgba(217, 217, 217, 0.538);
     }
 }
 
