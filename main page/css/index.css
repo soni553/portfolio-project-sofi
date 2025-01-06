@@ -210,7 +210,7 @@ h2 {
 /* section gallery */
 #gallery {
     width: 100vw;
-    height: 1150px;
+    height: auto;
     margin: 0 auto;
     background-color: rgb(255, 245, 247);
 }
@@ -278,6 +278,7 @@ h2 {
 
 /* section contact */
 #contact {
+    margin-top: 30px;
     padding-top: 20px;
     width: 100vw;
     background-color: lightseagreen;
