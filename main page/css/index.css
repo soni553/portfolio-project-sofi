@@ -339,6 +339,7 @@ form {
 input,
 textarea {
     border: none;
+    border: 1px solid lightseagreen;
     border-bottom: 3px solid hotpink;
     background-color: #FFFFFF;
     padding: 5px;
