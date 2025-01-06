@@ -213,6 +213,7 @@ h2 {
     height: auto;
     margin: 0 auto;
     background-color: rgb(255, 245, 247);
+    padding-bottom: 40px;
 }
 
 #gallery h2 {
@@ -278,7 +279,6 @@ h2 {
 
 /* section contact */
 #contact {
-    margin-top: 30px;
     padding-top: 20px;
     width: 100vw;
     background-color: lightseagreen;
