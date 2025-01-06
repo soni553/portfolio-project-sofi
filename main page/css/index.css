@@ -294,6 +294,10 @@ form {
     display: flex;
     flex-direction: column;
     justify-self: center;
+    border: 1px solid rgba(217, 217, 217, 0.58);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #contact h2 {
@@ -325,7 +329,8 @@ form {
 .label {
     padding: 5px;
     display: block;
-
+    text-align: right;
+    font-weight: bolder;
 }
 
 input,
