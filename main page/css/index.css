@@ -397,13 +397,8 @@ footer p {
         display: block;
     }
 
-    input[type="checkbox"]:checked~.navbar-links {
+    input[type="checkbox"]:checked~.nav-link {
         display: block;
-    }
-
-    .navbar-links {
-        display: none;
-        flex-direction: column;
     }
 
     nav ul {
@@ -429,6 +424,10 @@ footer p {
     form {
         width: 400px;
         background: rgba(217, 217, 217, 0.538);
+    }
+
+    #contact {
+        height: 550px;
     }
 }
 
