@@ -401,6 +401,10 @@ footer p {
         display: block;
     }
 
+    nav {
+        display: none;
+    }
+
     nav ul {
         flex-direction: column;
     }
