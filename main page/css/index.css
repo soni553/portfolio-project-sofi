@@ -397,10 +397,6 @@ footer p {
         display: block;
     }
 
-    input[type="checkbox"]:checked~.nav-link {
-        display: block;
-    }
-
     nav {
         display: none;
     }
