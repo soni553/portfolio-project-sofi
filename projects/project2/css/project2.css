@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
-.image-container {
-    background-image: url(./images/Path\ 15.png);
-    width: 100vw;
-    height: 60vh;
+body {
+    background-image: url(../images/Path\ 15.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    z-index: 1000;
+    background-color: #1A1A1AD4;
+    width: 600px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
 }
