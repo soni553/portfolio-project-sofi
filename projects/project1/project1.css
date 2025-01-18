@@ -41,17 +41,15 @@ form {
 
 h1,
 p {
-    display: flex;
-    justify-content: flex-end;
     color: #020253;
-    align-self: center;
     text-align: right;
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: 3.7rem;
     font-weight: bold;
     padding-bottom: 30px;
+    justify-self: center;
 }
 
 p {
@@ -82,6 +80,7 @@ label {
     color: #fff;
     align-self: flex-end;
     font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 #submit:hover {
@@ -95,7 +94,8 @@ label {
 
     h1 {
         font-size: 1.8rem;
-        justify-self: center;
+        padding-bottom: 20px;
+        padding-right: 25px;
     }
 }
 
@@ -107,7 +107,7 @@ label {
 
     .image img {
         width: 100vw;
-        height: 45vh;
+        height: 40vh;
     }
 
     section {
@@ -138,7 +138,7 @@ label {
 @media (max-width: 991.98px) {}
 
 section {
-    width: 30vw;
+    width: 40vw;
 }
 
 img {
@@ -146,7 +146,7 @@ img {
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 p {
@@ -158,5 +158,9 @@ p {
 @media (max-width: 1199.98px) {
     section {
         width: 40vw;
+    }
+
+    h1 {
+        font-size: 3rem;
     }
 }
