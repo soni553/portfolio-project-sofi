@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +8,75 @@
 
 body {
     background-image: url(../images/Path\ 15.png);
+    background-color: violet;
     background-size: contain;
     background-repeat: no-repeat;
+    font-family: "Heebo", serif;
+}
+
+.form-container {
+    z-index: 1;
+    position: absolute;
+    right: 200px;
+    top: 100px;
 }
 
 .form-container {
     z-index: 1000;
     background-color: #1A1A1AD4;
-    width: 600px;
+    width: 500px;
     height: 70vh;
     display: flex;
     flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+}
+
+p {
+    color: #F9F9F9;
+    font-size: 1.1rem;
+}
+
+h1,
+p,
+label {
+    direction: rtl;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+#name,
+#email {
+    background-color: #FFFFFF;
+    border: 2px solid #D31C75;
+    padding: 10px;
+}
+
+#submit {
+    background-color: #D31C75;
+    color: #FFFFFF;
+    padding: 12px;
+    width: 150px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    border: none;
+}
+
+#submit:hover {
+    transform: scale(1.02, 1.02);
+    transition: 0.9s;
 }
