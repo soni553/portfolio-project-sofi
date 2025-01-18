@@ -93,7 +93,7 @@ label {
         flex-direction: column;
     }
 
-    img {
+    .image img {
         width: 100vw;
         height: 45vh;
     }
@@ -122,6 +122,13 @@ label {
 
 @media (max-width: 991.98px) {}
 
+section {
+    width: 30vw;
+}
+
+img {
+    width: 40vw;
+}
 
 @media (max-width: 1199.98px) {
     section {
