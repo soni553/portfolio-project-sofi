@@ -88,19 +88,13 @@ label {
     transition: 0.9s;
 }
 
-@media (max-width: 575.98px) {
-    .form-container {
-        width: 300px;
-        padding: 20px;
-    }
-}
+@media (max-width: 575.98px) {}
 
 
 @media (max-width: 767.98px) {
     .container {
         right: 50%;
-        transform: translateX(50%);
-        margin: 0 auto;
+        transform: translatex(50%)
     }
 
     .form-container {
