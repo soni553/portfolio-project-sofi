@@ -36,6 +36,7 @@ section {
 form {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 h1,
@@ -50,15 +51,80 @@ h1 {
 }
 
 p {
+    align-self: center;
     font-size: 1.2rem;
     text-align: justify;
 }
 
 label {
     direction: rtl;
+    font-size: 1.01rem;
+    color: #2C2C2C;
 }
 
 #name,
 #email {
     background-color: #E5EEFF;
+    border: none;
+    border-bottom: 3px solid #020253;
+    padding: 10px;
+    width: 400px;
+}
+
+#submit {
+    margin-top: 20px;
+    background-color: #020253;
+    padding: 10px;
+    width: 200px;
+    color: #fff;
+    align-self: flex-end;
+    font-size: 1.2rem;
+}
+
+#submit:hover {
+    box-shadow: 1px 5px 10px #7fa9f8;
+}
+
+@media (max-width: 575.98px) {}
+
+
+@media (max-width: 767.98px) {
+    .page {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100vw;
+        height: 45vh;
+    }
+
+    section {
+        margin-top: 40px;
+        width: 100vw;
+    }
+
+    #name,
+    #email {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 80vw;
+        align-self: center;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 991.98px) {}
+
+
+@media (max-width: 1199.98px) {
+    section {
+        width: 40vw;
+    }
 }
