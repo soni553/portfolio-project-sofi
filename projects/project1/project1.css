@@ -15,7 +15,11 @@
 }
 
 .image {
-    background-image: url(./Coffee.png);
+    display: flex;
+    flex-direction: row;
+}
+
+img {
     width: 50vw;
     height: 100vh;
 }
@@ -26,7 +30,7 @@ section {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 500px;
+    width: 50vw;
 }
 
 form {
