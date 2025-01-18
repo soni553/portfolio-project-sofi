@@ -16,7 +16,7 @@
 
 .image {
     background-image: url(./Coffee.png);
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
 }
 
@@ -32,14 +32,12 @@ section {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 h1,
 p {
     text-align: right;
     color: #020253;
-    opacity: 1;
 }
 
 h1 {
@@ -50,4 +48,13 @@ h1 {
 p {
     font-size: 1.2rem;
     text-align: justify;
+}
+
+label {
+    direction: rtl;
+}
+
+#name,
+#email {
+    background-color: #E5EEFF;
 }
