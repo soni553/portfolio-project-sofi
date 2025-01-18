@@ -7,22 +7,26 @@
 }
 
 body {
-    background-image: url(../images/Path\ 15.png);
-    background-color: violet;
-    background-size: contain;
-    background-repeat: no-repeat;
     font-family: "Heebo", serif;
 }
 
-.form-container {
-    z-index: 1;
+img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100vw;
+    display: inline;
+}
+
+.container {
+    z-index: 15;
     position: absolute;
     right: 200px;
     top: 100px;
 }
 
+
 .form-container {
-    z-index: 1000;
     background-color: #1A1A1AD4;
     width: 500px;
     height: 70vh;
@@ -34,12 +38,15 @@ body {
 
 h1 {
     color: #FFFFFF;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    padding-bottom: 15px;
+    font-weight: bold;
 }
 
 p {
     color: #F9F9F9;
     font-size: 1.1rem;
+    padding-bottom: 20px;
 }
 
 h1,
@@ -79,4 +86,53 @@ label {
 #submit:hover {
     transform: scale(1.02, 1.02);
     transition: 0.9s;
+}
+
+@media (max-width: 575.98px) {
+    .form-container {
+        width: 300px;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .container {
+        right: 50%;
+        transform: translateX(50%);
+        margin: 0 auto;
+    }
+
+    .form-container {
+        width: 320px;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .container {
+        right: 150px;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    ...
+}
+
+@media (max-width: 1399.98px) {
+    ...
 }
