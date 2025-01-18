@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
-.imagecontainer {
+.image-container {
     background-image: url(./images/Path\ 15.png);
+    width: 100vw;
+    height: 60vh;
 }
