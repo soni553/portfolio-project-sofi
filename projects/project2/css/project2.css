@@ -96,14 +96,9 @@ label {
 }
 
 @media (max-width: 575.98px) {
-    .container {
-        width: 250px;
-        height: 250px;
-    }
+    .container {}
 
-    .form-container {
-        padding: 10px;
-    }
+    .form-container {}
 
     h1 {
         font-size: 1.7rem;
