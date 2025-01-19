@@ -55,7 +55,7 @@ p {
 
 h1,
 p,
-label {
+form label {
     direction: rtl;
 }
 
@@ -65,19 +65,22 @@ form {
     gap: 10px;
 }
 
-label {
+form label {
     color: #FFFFFF;
     font-size: 1rem;
 }
 
-#name,
-#email {
+input[type="email"],
+input[type="text"] {
+    text-align: right;
+    justify-content: right;
+    justify-items: right;
     background-color: #FFFFFF;
     border: 2px solid #D31C75;
     padding: 10px;
 }
 
-#submit {
+input[type="submit"] {
     background-color: #D31C75;
     color: #FFFFFF;
     padding: 12px;
@@ -96,9 +99,15 @@ label {
 }
 
 @media (max-width: 575.98px) {
-    .container {}
+    .container {
+        width: 250px;
+        height: 250px;
+    }
 
-    .form-container {}
+    .form-container {
+        align-content: center;
+    }
+
 
     h1 {
         font-size: 1.7rem;
@@ -109,7 +118,7 @@ label {
         font-size: 0.9rem;
     }
 
-    label {
+    form label {
         font-size: 0.7rem;
     }
 }
@@ -122,7 +131,7 @@ label {
     }
 
     .form-container {
-        padding: 10px;
+        padding: 30px;
     }
 
 
@@ -134,7 +143,7 @@ label {
         font-size: 1rem;
     }
 
-    label {
+    form label {
         font-size: 0.8rem;
     }
 }
