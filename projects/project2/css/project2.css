@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 500px;
+    background-position: top;
 }
 
 .container {
@@ -39,6 +40,11 @@ body {
     justify-content: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 h1 {
     color: #FFFFFF;
@@ -59,11 +65,7 @@ form label {
     direction: rtl;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 
 form label {
     color: #FFFFFF;
@@ -78,6 +80,7 @@ input[type="text"] {
     background-color: #FFFFFF;
     border: 2px solid #D31C75;
     padding: 10px;
+    width: 100%;
 }
 
 input[type="submit"] {
@@ -99,14 +102,7 @@ input[type="submit"] {
 }
 
 @media (max-width: 575.98px) {
-    .container {
-        width: 250px;
-        height: 250px;
-    }
-
-    .form-container {
-        align-content: center;
-    }
+    .container {}
 
 
     h1 {
