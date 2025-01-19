@@ -10,31 +10,35 @@ body {
     font-family: "Heebo", serif;
 }
 
-img {
-    background-size: contain;
+.image {
+    position: relative;
+    background-image: url(../images/Path\ 15.png);
     background-repeat: no-repeat;
-    height: 60vh;
     width: 100vw;
-    display: inline;
+    height: 500px;
 }
 
 .container {
-    z-index: 15;
     position: absolute;
-    right: 200px;
-    top: 100px;
+    z-index: 100;
+    top: 130px;
+    right: 300px;
+    width: 500px;
+    height: 500px;
+    display: block;
 }
 
 
 .form-container {
     background-color: #1A1A1AD4;
     width: 500px;
-    height: 70vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
     padding: 50px;
     justify-content: center;
 }
+
 
 h1 {
     color: #FFFFFF;
@@ -81,6 +85,9 @@ label {
     justify-self: flex-end;
     align-self: flex-end;
     border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    ;
 }
 
 #submit:hover {
@@ -88,18 +95,42 @@ label {
     transition: 0.9s;
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .form-container {
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    label {
+        font-size: 0.7rem;
+    }
+}
 
 
 @media (max-width: 767.98px) {
     .container {
-        right: 50%;
-        transform: translatex(50%)
+        width: 300px;
+        height: 300px;
     }
 
     .form-container {
-        width: 320px;
-        padding: 40px;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
     }
 
     h1 {
@@ -118,15 +149,27 @@ label {
 
 @media (max-width: 991.98px) {
     .container {
-        right: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
     }
 }
 
-
-@media (max-width: 1199.98px) {
-    ...
-}
-
 @media (max-width: 1399.98px) {
-    ...
+    .image {
+        height: 450px;
+    }
+
+    .container {
+        top: 100px;
+        right: 230px;
+        width: 450px;
+        height: 450px;
+    }
+
+    .form-container {
+        width: 450px;
+        height: 450px;
+        padding: 40px;
+    }
 }
