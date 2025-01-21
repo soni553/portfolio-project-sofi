@@ -10,6 +10,8 @@ body {
     background-image: url(../images/Path\ 15.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
 }
 
 .container {
@@ -39,20 +41,19 @@ p {
 }
 
 form {
-    margin-top: 250px;
+    margin-top: 30vh;
     gap: 20px;
     display: flex;
     flex-direction: row-reverse;
 }
 
-label {
+form label {
     color: #011560;
     font-size: 1rem;
     text-align: right;
-    display: block;
-    padding: 5px;
-    justify-content: right;
 }
 
 input [ type="name"],
 input [type="email"] {}
+
+input [type="submit"] {}
