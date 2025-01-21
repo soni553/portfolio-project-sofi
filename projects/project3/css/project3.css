@@ -20,7 +20,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 200px;
+    top: 150px;
+    margin: 0 auto;
 }
 
 header {
@@ -41,19 +42,48 @@ p {
 }
 
 form {
-    margin-top: 30vh;
+    margin-top: 32vh;
     gap: 20px;
     display: flex;
     flex-direction: row-reverse;
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
 form label {
     color: #011560;
     font-size: 1rem;
     text-align: right;
+    justify-content: right;
 }
 
-input [ type="name"],
-input [type="email"] {}
+input[type="text"],
+input[type="email"] {
+    background-color: #F6F6F6;
+    border: none;
+    border-bottom: 3px solid #D3E10E;
+    padding: 10px;
+    width: 300px;
+}
 
-input [type="submit"] {}
+input[type="submit"] {
+    padding: 10px;
+    color: #011560;
+    background-color: #D3E10E;
+    border: none;
+    margin-top: 20px;
+    width: 100px;
+}
+
+input[type="submit"]:hover {
+    background-color: #414503;
+    color: #F9F9F9;
+    transition: 2s;
+}
