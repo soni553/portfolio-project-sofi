@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     height: 60vh;
+    max-width: 100%;
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
     position: relative;
     top: 150px;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 header {
@@ -43,10 +45,10 @@ p {
 
 form {
     margin-top: 32vh;
-    gap: 20px;
+    gap: 40px;
     display: flex;
     flex-direction: row-reverse;
-    width: 50%;
+    width: 60%;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -86,4 +88,68 @@ input[type="submit"]:hover {
     background-color: #414503;
     color: #F9F9F9;
     transition: 2s;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        padding: 10px;
+        top: 90px;
+    }
+
+    input[type="submit"] {
+        margin-top: 5px;
+    }
+
+    form {
+        margin-top: 5vh;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    form {
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    h1 {
+        color: #D3E10E;
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .container {
+        top: 150px;
+    }
+
+    form {
+        margin-top: 40vh;
+    }
+}
+
+@media (max-width: 1099.98px) {
+    .container {
+        top: 160px;
+    }
+
+    form {
+        gap: 42px;
+        margin-top: 42vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
 }
