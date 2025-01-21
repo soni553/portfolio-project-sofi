@@ -27,6 +27,7 @@ body {
     width: 500px;
     height: 500px;
     display: block;
+    overflow: hidden;
 }
 
 
@@ -102,13 +103,24 @@ input[type="submit"] {
 }
 
 @media (max-width: 575.98px) {
-    .container {}
-
-
-    h1 {
-        font-size: 1.7rem;
-        color: #D31C75;
+    .image {
+        width: 100vw;
     }
+
+    .container {
+        width: 200px;
+        height: 300px;
+        right: 0;
+        left: 0;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
 
     p {
         font-size: 0.9rem;
@@ -124,6 +136,7 @@ input[type="submit"] {
     .container {
         width: 300px;
         height: 300px;
+        max-width: 100%;
     }
 
     .form-container {
@@ -132,7 +145,7 @@ input[type="submit"] {
 
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     p {
