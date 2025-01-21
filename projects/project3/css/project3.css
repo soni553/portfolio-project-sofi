@@ -3,4 +3,56 @@
     padding: 0;
     box-sizing: border-box;
     font-family: assistant;
+    direction: ltr;
 }
+
+body {
+    background-image: url(../images/Path\ 15.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+h1 {
+    color: #D3E10E;
+    font-size: 5rem;
+    padding-bottom: 40px;
+}
+
+p {
+    color: #F9F9F9;
+    font-size: 1.3rem;
+}
+
+form {
+    margin-top: 250px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+label {
+    color: #011560;
+    font-size: 1rem;
+    text-align: right;
+    display: block;
+    padding: 5px;
+    justify-content: right;
+}
+
+input [ type="name"],
+input [type="email"] {}
