@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,4 +13,92 @@ body {
     background-size: cover;
     height: 100vh;
     color: #FFFFFF;
+    font-family: "Varela Round", serif;
+    ;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px;
+    width: 60vw;
+    height: 60vh;
+}
+
+h1 {
+    font-family: "Satisfy", serif;
+    font-size: 9rem;
+    text-shadow: 0px 0px 36px #00000087;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1rem;
+    text-align: right;
+    justify-content: right;
+}
+
+input[type=text],
+input[type=email] {
+    background: #f6f6f615 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+}
+
+input[type=submit] {
+    align-self: flex-end;
+    height: 30px;
+    width: 150px;
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #1c1c1c50;
+    color: #FFFFFF;
+    transition: 2s;
+    box-shadow: 0px 0px 6px #FFFFFF;
+    /* responsive */
+}
+
+@media (max-width: 1099.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
