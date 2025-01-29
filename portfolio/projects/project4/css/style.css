@@ -24,7 +24,7 @@ body {
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 120px;
     padding: 20px;
     width: 60vw;
     height: 65vh;
@@ -72,18 +72,16 @@ input[type=email] {
     background: #f6f6f615 0% 0% no-repeat padding-box;
     border: 2px solid #FFFFFF;
     width: 250px;
-    height: 30px;
-    padding: 10px;
+    height: 35px;
 }
 
 input[type=submit] {
     align-self: flex-end;
-    height: 30px;
+    height: 35px;
     width: 150px;
     background-color: #FFFFFF;
     color: #1C1C1C;
     border: none;
-    padding: 10px;
     text-align: center;
 }
 
