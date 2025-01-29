@@ -14,7 +14,7 @@ body {
     height: 100vh;
     color: #FFFFFF;
     font-family: "Varela Round", serif;
-    ;
+    overflow: hidden;
 }
 
 .container {

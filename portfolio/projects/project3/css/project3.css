@@ -13,6 +13,7 @@ body {
     background-position: center;
     height: 60vh;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .container {
