@@ -5,63 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>think outside the box </title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div>
+            <div id="main">
                 <h1> לחשוב מחוץ ל </h1>
-                <p> לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי
+                <p> לורם איפסום דולור סיט אמט, קונסקטורר
+
+                    אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין
+                    <br> נשואי
                     מנורך.
                     לורם איפסום דולור
-                    סיט אמט, קוואזי במר מודוף. </p>
+                    סיט אמט, קוואזי במר מודוף.
+                </p>
             </div>
             <img src="./images/Group 1050.svg" alt="box image">
         </header>
         <aside>
             <a href="#"> <img src="./images/Icon awesome-whatsapp.svg" alt="whatsapp image link"> </a>
         </aside>
+
         <div id="box-items">
             <div class="items">
                 <i class="fa-solid fa-location-dot"></i>
-                <h1> כותרת אזור </h1>
+                <h3> כותרת אזור </h3>
                 <p> לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה. </p>
             </div>
             <div class="items">
                 <i class="fa-solid fa-address-card"></i>
-                <h1> כותרת אזור </h1>
+                <h3> כותרת אזור </h3>
                 <p> לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה. </p>
             </div>
             <div class="items">
                 <i class="fa-solid fa-wand-sparkles"></i>
-                <h1> כותרת אזור </h1>
+                <h3> כותרת אזור </h3>
                 <p> לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה. </p>
             </div>
             <div class="items">
                 <i class="fa-solid fa-briefcase"></i>
-                <h1> כותרת אזור </h1>
+                <h3> כותרת אזור </h3>
                 <p> לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה. </p>
             </div>
 
         </div>
         <div class="contact">
-            <form action="">
-                <h2> הקופון עלינו </h2>
-                <p> לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה. </p>
-                <label for=""> שם מלא </label>
-                <input type="text">
-                <label for=""> דוא״ל </label>
-                <input type="text">
-                <label for=""> טקסט מלא </label>
-                <input type="text">
-                <input type="button" value="שליחה">
-            </form>
+            <div class="forme">
+                <form action="">
+                    <h2> הקופון עלינו </h2>
+                    <p> לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה. </p>
+                    <label for="name"> שם מלא </label>
+                    <input type="text" id="name" required>
+                    <label for="email"> דוא״ל </label>
+                    <input type="email" id="email " required>
+                    <label for="text"> טקסט מלא </label>
+                    <textarea name="text" id="text" required></textarea>
+                    <input type="submit" value="שליחה">
+                </form>
+            </div>
             <div class="boximage">
-                <img src="" alt="">
+                <div style="max-width:100%;overflow:hidden;color:red;width:850px;height:450px;">
+                    <div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe
+                            style="height:100%;width:100%;border:0;" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=haifa&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes"
+                        id="authorize-map-data"></a>
+                </div>
             </div>
         </div>
-        <footer></footer>
+        <footer>
+            <img src=" ./images/fotter.png" alt="contact icons">
+        </footer>
     </div>
     <script src="https://kit.fontawesome.com/81a4c75b1d.js" crossorigin="anonymous"></script>
 </body>
