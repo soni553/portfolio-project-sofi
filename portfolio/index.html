@@ -70,9 +70,9 @@
 
         <section id="gallery">
             <h2> html & cssעבודות ב</h2>
-            <div class="flexgallery">
+            <div class="gridgallery">
                 <div class="item item1">
-                    <img src="https://placehold.co/250x200" alt="" class="proimg">
+                    <div class="proimg"></div>
                     <h3> name </h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat!</p>
                     <div class="smallimg">
@@ -82,7 +82,7 @@
                     <a href="" class="button"> לעמוד הפרויקט </a>
                 </div>
                 <div class="item item2">
-                    <img src="https://placehold.co/250x200" alt="" class="proimg">
+                    <div class="proimg"></div>
                     <h3> name </h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat!</p>
                     <div class="smallimg">
@@ -92,7 +92,7 @@
                     <a href="" class="button"> לעמוד הפרויקט </a>
                 </div>
                 <div class="item item3">
-                    <img src="https://placehold.co/250x200" alt="" class="proimg">
+                    <div class="proimg"></div>
                     <h3> name </h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat!</p>
                     <div class="smallimg">
@@ -102,7 +102,7 @@
                     <a href="" class="button"> לעמוד הפרויקט </a>
                 </div>
                 <div class="item item4">
-                    <img src="https://placehold.co/250x200" alt="" class="proimg">
+                    <div class="proimg"></div>
                     <h3> name </h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat!</p>
                     <div class="smallimg">
@@ -112,7 +112,7 @@
                     <a href="" class="button"> לעמוד הפרויקט </a>
                 </div>
                 <div class="item item5">
-                    <img src="https://placehold.co/250x200" alt="" class="proimg">
+                    <div class="proimg"></div>
                     <h3> name </h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat!</p>
                     <div class="smallimg">
@@ -122,7 +122,7 @@
                     <a href="" class="button"> לעמוד הפרויקט </a>
                 </div>
                 <div class="item item6">
-                    <img src="https://placehold.co/250x200" alt="" class="proimg">
+                    <div class="proimg"></div>
                     <h3> name </h3>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat!</p>
                     <div class="smallimg">
@@ -131,34 +131,25 @@
                     </div>
                     <a href="" class="button"> לעמוד הפרויקט </a>
                 </div>
-                <div class="item item7">
-                    <img src="https://placehold.co/250x200" alt="" class="proimg">
-                    <h3> name </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat!</p>
-                    <div class="smallimg">
-                        <img src="./images/img-HTML.png" alt="html">
-                        <img src="./images/img-CSS.png" alt="css">
-                    </div>
-                    <a href="" class="button"> לעמוד הפרויקט </a>
-                </div>
+
             </div>
         </section>
         <section id="contact">
             <h2> צור קשר </h2>
             <p> אהבתם ורוצים את אתר החלומות שלכם? אם כן תשאירו פרטים </p>
             <form>
-                <label for="name" class="label">שם מלא </label>
+                <label for="name">שם מלא </label>
                 <input type="text" id="name" required>
 
-                <label for="email" class="label"> אימייל </label>
+                <label for="email"> אימייל </label>
                 <input type="email" id="email" required>
 
-                <label for="tel" class="label"> טלפון </label>
+                <label for="tel"> טלפון </label>
                 <input type="tel" id="tel" required>
 
-                <label for="text" class="label"> תוכן ההודעה </label>
+                <label for="text"> תוכן ההודעה </label>
                 <textarea id="text" required> </textarea>
-                <button type="submit" class="button">לשליחה </button>
+                <input type="submit" value="לשליחה" class="button">
 
             </form>
         </section>

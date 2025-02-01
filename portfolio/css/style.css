@@ -209,10 +209,10 @@ h2 {
 /* section gallery */
 #gallery {
     width: 100vw;
-    height: auto;
+    height: 1000px;
     margin: 0 auto;
-    background-color: rgb(255, 245, 247);
-    padding-bottom: 40px;
+    background-color: rgb(253, 230, 235);
+    padding: 30px;
 }
 
 #gallery h2 {
@@ -223,24 +223,34 @@ h2 {
     color: #3A3A3A;
 }
 
-.flexgallery {
-    display: flex;
-    align-items: center;
+.gridgallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+    align-items: center;
 }
 
 .item {
-    align-content: flex-start;
-    width: 300px;
-    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
     padding: 15px;
     text-align: center;
     background: #fff;
-    border: 1px solid rgba(217, 217, 217, 0.58);
-    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(217, 217, 217, 0.477);
+    box-shadow: 10px 12px 12px rgba(0, 0, 0, 0.119);
     border-radius: 17px;
+}
+
+.proimg {
+    width: 95%;
+    height: 150px;
+    background-color: blue;
+    border-radius: 10px;
 }
 
 .item h3 {
@@ -253,6 +263,12 @@ h2 {
     text-align: justify;
     font-size: 1rem;
     color: #3A3A3A;
+
+}
+
+.item .button {
+    width: 140px;
+    height: 40px;
 }
 
 .item .smallimg {
@@ -281,7 +297,7 @@ h2 {
     padding-top: 20px;
     width: 100vw;
     background-color: lightseagreen;
-    height: 500px;
+    height: 520px;
     background-image: url(../images/Rectangle\ 41.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -292,8 +308,10 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    justify-self: center;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+    text-align: right;
     background: rgba(217, 217, 217, 0.204);
     border: 1px solid rgba(217, 217, 217, 0.58);
     box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.22);
@@ -328,22 +346,35 @@ form {
     transition: 0.9s;
 }
 
-.label {
-    padding: 5px;
-    display: block;
+form label {
     text-align: right;
     font-weight: bolder;
+    padding: 5px;
+    color: #323131;
 }
 
-input,
+input[type=text],
+input[type=email],
+input[type=tel],
 textarea {
     border: none;
     border: 1px solid lightseagreen;
     border-bottom: 3px solid hotpink;
     background-color: #FFFFFF;
     padding: 5px;
-    width: 200px;
+    width: 400px;
     border-radius: 5px;
+    height: 35px;
+}
+
+form .button {
+    width: 150px;
+}
+
+textarea {
+    height: 45px;
+    box-sizing: border-box;
+    resize: none;
 }
 
 /* aside */
@@ -385,8 +416,54 @@ footer p {
 
 /* responsive  */
 
-@media (max-width: 575.98px) {}
+@media (max-width: 1299.98px) {
+    #gallery {
+        height: 1400px;
+    }
+}
 
+@media (max-width: 991.98px) {
+    main {
+        height: 40vh;
+    }
+
+    #gallery {
+        height: 1100px;
+    }
+
+    .gridgallery {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+
+    .item {
+        width: 250px;
+        height: 300px;
+    }
+
+    .item h3 {
+        padding: 5px;
+    }
+
+    .item .smallimg {
+        padding-bottom: 5px;
+    }
+
+    form {
+        width: 400px;
+        background: rgba(217, 217, 217, 0.538);
+    }
+
+    #contact {
+        height: 550px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea {
+        width: 350px;
+    }
+}
 
 @media (max-width: 767.98px) {
     header {
@@ -413,27 +490,87 @@ footer p {
     #about p {
         font-size: 1em;
     }
+
+    #gallery {
+        height: 1020px;
+    }
+
+
+    .item {
+        width: 220px;
+        height: 270px;
+        padding: 10px;
+    }
+
+    .item .button {
+        width: 120px;
+        height: 40px;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .item p {
+        font-size: 0.8rem;
+    }
 }
 
+@media (max-width: 575.98px) {
+    main h1 {
+        font-size: 3.2em;
+        padding-top: 30px;
+    }
 
-@media (max-width: 991.98px) {
+    main p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    #about {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 520px;
+    }
+
     #gallery {
-        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    #gallery h2 {
+        padding-top: 5px;
+        font-size: 2rem;
+    }
+
+
+    .gridgallery {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        grid-template-columns: repeat(300px, 1fr);
+        padding-left: 60px;
     }
 
     form {
-        width: 400px;
-        background: rgba(217, 217, 217, 0.538);
+        width: 300px;
     }
 
-    #contact {
-        height: 550px;
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea {
+        width: 250px;
+    }
+
+    #contact p {
+        font-size: 1rem;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    aside {
+        height: 65px;
     }
 }
-
-
-@media (max-width: 1199.98px) {}
-
-
-
-@media (max-width: 1399.98px) {}
