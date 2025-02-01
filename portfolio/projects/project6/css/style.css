@@ -1,15 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.page {
+    font-family: "Heebo", serif;
+    overflow: hidden;
+}
+
+#color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 10px;
+    background-color: #FDBD03;
+}
+
 .container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    margin-top: 60px;
+    width: 100vw;
+    height: 600px;
+    padding-left: 40px;
 }
+
+#phone img {
+    width: 400px;
+    height: 550px;
+}
+
 
 form {
     display: flex;
     flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    text-align: right;
+    width: 500px;
+    height: 500px;
+}
+
+.forme {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 70px;
+}
+
+#sections {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+#sec1,
+#sec2 {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    font-size: 3rem;
+    color: #FDBD03;
+    font-weight: 900;
+}
+
+form p {
+    color: #020253;
+    font-size: 1.1rem;
+    width: 350px;
+    height: 5px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 3px solid #FDBD03;
+    width: 245px;
+    height: 30px;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    background-color: #FDBD03;
+    border: none;
+    height: 40px;
+    color: #000000;
+    font-weight: 600;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #E5EEFF;
+    color: #FDBD03;
+    transition: 2s;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    width: 500px;
+    height: 70px;
+}
+
+aside {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: #FDBD03;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+aside img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#color2 {
+    width: 500px;
+    height: 10px;
+    background-color: #FDBD03;
+
+}
+
+/* responsive */
+
+@media (max-width: 1099.98px) {
+    .container {
+        height: 500px
+    }
+
+    form {
+        height: 450px;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .container {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    form {
+        display: block;
+        max-width: 100%;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        height: 25px;
+    }
+
+    #phone img {
+        width: 150px;
+        height: 200px;
+    }
+
+    #color2,
+    #color {
+        width: 100vw;
+    }
+
+    h2,
+    p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    input[type=submit] {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .forme {
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        padding: 0;
+        margin-top: 10px;
+        height: 750px;
+    }
+
+    aside {
+        left: 20px;
+    }
+
+    aside img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #sections {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    #phone img {
+        width: 100px;
+        height: 150px;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 200px;
+        height: 30px;
+    }
+
+    .forme {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    form p {
+        margin-bottom: 50px;
+    }
+
+    input[type=submit] {
+        width: 200px;
+    }
+
+    footer {
+        left: 0;
+        right: 0;
+    }
+
+    footer img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        margin-top: 2px;
+    }
+
+    #phone img {
+        width: 60px;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer img {
+        margin: 0 auto;
+
+    }
 }
