@@ -12,9 +12,14 @@
 
 
 /* header+nav */
+#space {
+    width: 100vw;
+    height: 9vh;
+    background-color: #fff;
+}
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100vw;
     justify-content: space-between;
@@ -496,6 +501,7 @@ footer p {
         position: absolute;
         align-items: center;
         top: 9vh;
+        padding-top: 20px;
         right: 0;
         left: 0;
         width: 100vw;
@@ -510,7 +516,7 @@ footer p {
     nav .menu-toggle {
         display: block;
         top: 0;
-        padding-right: 6vw;
+        padding-right: 10vw;
     }
 
     #about p {
