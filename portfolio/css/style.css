@@ -466,52 +466,60 @@ footer p {
 }
 
 @media (max-width: 767.98px) {
-    header {
-        justify-content: space-evenly;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    nav {
+    nav ul {
+        flex-direction: column;
         display: none;
     }
 
-    nav ul {
-        flex-direction: column;
+    nav ul.active {
+        display: flex;
     }
 
-    .myself {
-        flex-direction: row-reverse;
-        padding-right: 8vw;
+    nav .menu-toggle {
+        display: block;
+        cursor: pointer;
     }
+}
 
-    #about p {
-        font-size: 1em;
-    }
+nav .menu-toggle {
+    display: none;
+}
 
-    #gallery {
-        height: 1020px;
-    }
+header {
+    justify-content: space-evenly;
+}
 
 
-    .item {
-        width: 220px;
-        height: 270px;
-        padding: 10px;
-    }
+.myself {
+    flex-direction: row-reverse;
+    padding-right: 8vw;
+}
 
-    .item .button {
-        width: 120px;
-        height: 40px;
-        font-size: 0.8rem;
-        padding: 5px;
-    }
+#about p {
+    font-size: 1em;
+}
 
-    .item p {
-        font-size: 0.8rem;
-    }
+#gallery {
+    height: 1020px;
+}
+
+
+.item {
+    width: 220px;
+    height: 270px;
+    padding: 10px;
+}
+
+.item .button {
+    width: 120px;
+    height: 40px;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+.item p {
+    font-size: 0.8rem;
+}
 }
 
 @media (max-width: 575.98px) {
