@@ -260,14 +260,21 @@ h2 {
 .proimg {
     width: 95%;
     height: 150px;
-    background-color: blue;
     border-radius: 10px;
+}
+
+.item .item1 .proimg {
+    background-image: url(../images/project1.png);
+    background-size: contain;
+    width: 200;
+    height: 150px;
 }
 
 .item h3 {
     font-family: "Playwrite AU SA", serif;
     padding: 20px;
     color: #3A3A3A;
+    font-size: 1.1rem;
 }
 
 .item p {
