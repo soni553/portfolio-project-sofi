@@ -240,6 +240,7 @@ h2 {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .item {
@@ -257,18 +258,12 @@ h2 {
     border-radius: 17px;
 }
 
-.proimg {
+.proimg img {
     width: 95%;
     height: 150px;
     border-radius: 10px;
 }
 
-.item .item1 .proimg {
-    background-image: url(../images/project1.png);
-    background-size: contain;
-    width: 200;
-    height: 150px;
-}
 
 .item h3 {
     font-family: "Playwrite AU SA", serif;
@@ -278,7 +273,7 @@ h2 {
 }
 
 .item p {
-    text-align: justify;
+    text-align: center;
     font-size: 1rem;
     color: #3A3A3A;
 
@@ -502,7 +497,6 @@ footer p {
     }
 
     nav ul.is-active {
-        position: fixed;
         display: flex;
         z-index: 10;
         position: absolute;
@@ -512,7 +506,7 @@ footer p {
         right: 0;
         left: 0;
         width: 100vw;
-        height: 60vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         transition: all .4s ease;
@@ -549,6 +543,12 @@ footer p {
 
     .item p {
         font-size: 0.8rem;
+    }
+
+    .proimg img {
+        width: 95%;
+        height: 100px;
+        border-radius: 10px;
     }
 }
 
