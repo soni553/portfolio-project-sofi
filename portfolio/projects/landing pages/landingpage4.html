@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sofi's project 4</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="space"></div>
+        <header>
+            <div class="myself">
+                <a href="../../index.html"> <img src="./images/my-picture.jpg" alt="my picture " class="my-picture">
+                </a>
+                <p>sofi_fixman</p>
+            </div>
+            <nav>
+                <div class="navlist"></div>
+                <div id="nav-toggle" class="menu-toggle">☰</div>
+                <ul id="nav-menu" class="nav-right nav-menu">
+                    <li>
+                        <a href="../../index.html#main">ראשי</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#about">אודות</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#gallery">גלריה</a>
+                    </li>
+                    <li>
+                        <a href="../../index.html#contact">צור קשר</a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+    <main id="main">
+        <h1>פרויקט מספר 4 </h1>
+        <p>
+            בניית טופס למען קבלת מתנות של חברת : כאן ועכשיו
+        </p>
+        <div class="click">
+            <a href="../project4/index.html" class="btn" target="_blank"> לצפייה בפרויקט</a>
+            <a href="../../zip files/project4.zip" class="btn" download> להורדת הפרויקט </a>
+        </div>
+    </main>
+
+    <div id="htmlcss">
+        <img src="./images/img-HTML.png" alt="html">
+        <img src="./images/img-CSS.png" alt="css">
+    </div>
+    <div class="project-img">
+        <img src="./images/project4.png" alt="project 2" class="proimg">
+    </div>
+    <aside>
+        <img src="./images/Icon awesome-facebook-f.svg" alt="facebook">
+        <img src="./images/Icon awesome-linkedin-in.svg" alt="linkedin">
+        <img src="./images/Icon material-location-on.svg" alt="location">
+        <img src="./images/Icon simple-email.svg" alt="email">
+        <img src="./images/Icon simple-whatsapp-1.svg" alt="whatsapp">
+        <img src="./images/Icon simple-whatsapp.svg" alt="whatsapp">
+    </aside>
+    <footer>
+        <p> כל הזכויות שמורות לסופי פיקסמן &copy;</p>
+    </footer>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("nav-toggle").addEventListener("click", toggleNav);
+        function toggleNav() {
+            var nav = document.getElementById("nav-menu");
+            var className = nav.getAttribute("class");
+            if (className == "nav-right nav-menu") {
+                nav.className = "nav-right nav-menu is-active";
+            } else {
+                nav.className = "nav-right nav-menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

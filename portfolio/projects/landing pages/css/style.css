@@ -320,6 +320,19 @@ footer p {
         height: 40px;
     }
 
+    .project-img {
+        height: 80vh;
+    }
+
+    .proimg {
+        width: 70vw;
+        height: 70vh;
+    }
+
+    .click {
+        margin-top: 25px;
+    }
+
 }
 
 
