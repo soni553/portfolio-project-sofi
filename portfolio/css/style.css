@@ -213,9 +213,13 @@ h2 {
 }
 
 #about .button:hover {
-    transform: scale(1.03, 1.03);
+    /*   transform: scale(1.03, 1.03);
     transition: 0.9s;
+    color: #3A3A3A; */
+    transition: 3s;
     color: #3A3A3A;
+    background-color: rgba(255, 105, 180, 0.777);
+    border: 2px solid lightseagreen;
 }
 
 /* section gallery */
@@ -355,9 +359,10 @@ form {
 }
 
 #contact .button:hover {
+    transition: 3s;
     color: #fff;
-    transform: scale(1.03, 1.03);
-    transition: 0.9s;
+    background-color: rgba(255, 105, 180, 0.901);
+    border: 2px solid lightseagreen;
 }
 
 form label {
