@@ -228,7 +228,7 @@ h2 {
     height: 1000px;
     margin: 0 auto;
     background-color: rgb(253, 230, 235);
-    padding: 30px;
+    padding: 20px;
 }
 
 #gallery h2 {
@@ -242,10 +242,9 @@ h2 {
 .gridgallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .item {
@@ -290,7 +289,7 @@ h2 {
 }
 
 .item .smallimg {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .item .smallimg img {
@@ -312,10 +311,10 @@ h2 {
 
 /* section contact */
 #contact {
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100vw;
     background-color: lightseagreen;
-    height: 520px;
+    height: 530px;
     background-image: url(../images/Rectangle\ 41.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -361,7 +360,7 @@ form {
 #contact .button:hover {
     transition: 3s;
     color: #fff;
-    background-color: rgba(255, 105, 180, 0.901);
+    background-color: rgba(255, 105, 180, 0.777);
     border: 2px solid lightseagreen;
 }
 
@@ -438,6 +437,16 @@ footer p {
 @media (max-width: 1299.98px) {
     #gallery {
         height: 1400px;
+    }
+
+    .item {
+        padding: 20px;
+    }
+
+    .proimg img {
+        width: 95%;
+        height: 110px;
+        border-radius: 10px;
     }
 }
 
